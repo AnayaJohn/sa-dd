@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tour Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+ 
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {  
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 150px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ 
+p{
+    /*font-weight: bold;*/
+    color: white;
+  }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+ul {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #54b8b3;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #54b8b3;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<div id="navbar">
+  <a href="index.html">Home</a></li>
+  <a href="nature.html">Natural Wonders</a></li>
+  <a href="cities.html">Popular Cities</a></li>
+  <a href="cuisines.html">Cuisines</a></li>
+  <a href="image.html">Image Gallery</a></li>
+  <a href="contact.html">Contact Us</a></li>
+</div>
+</style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="nature.html">Natural Wonders</a></li>
+    <li><a href="cities.html">Popular Cities</a></li>
+    <li><a href="cuisines.html">Cuisines</a></li>
+    <li><a class="active"  href="image.html">Image Gallery</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+
+<div class="Header2">
+  <h1 style="text-align:center">Image Gallery</h1>
+</div>
+
+<div>
+
+</div>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  </script>
+
+<div class="container">
+  <div class="mySlides">
+    <img src="https://www.nationsonline.org/gallery/Australia/Twelve-Apostles-Princetown-Australia.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://cdn.britannica.com/69/74869-050-6BACE8C9/Dove-Lake-part-Cradle-Mountain-St-Clair.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://www.nationsonline.org/gallery/Australia/Uluru-from-above-MS.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/MitchellFallsWesternAustraliaGeorginaSteytler.jpg?crop=0,209,5581,3069&wid=4000&hei=2200&scl=1.39525" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://windows10spotlight.com/wp-content/uploads/2020/03/728b66f752feaafc6e872e631f7757a1.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://media4.s-nbcnews.com/j/newscms/2018_22/2449551/180530-great-barrier-reef-ac-1131p_d11657b9b63d5672d33de49743e24de4.fit-760w.jpg" style="width:100%">
+  </div>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://www.nationsonline.org/gallery/Australia/Twelve-Apostles-Princetown-Australia.jpg" style="width:100%" onclick="currentSlide(1)" alt="Twelve Apostles">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.britannica.com/69/74869-050-6BACE8C9/Dove-Lake-part-Cradle-Mountain-St-Clair.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cradle Mountain">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.nationsonline.org/gallery/Australia/Uluru-from-above-MS.jpg" style="width:100%" onclick="currentSlide(3)" alt="Uluru">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/MitchellFallsWesternAustraliaGeorginaSteytler.jpg?crop=0,209,5581,3069&wid=4000&hei=2200&scl=1.39525" style="width:100%" onclick="currentSlide(4)" alt="Mitchell Falls">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://windows10spotlight.com/wp-content/uploads/2020/03/728b66f752feaafc6e872e631f7757a1.jpg" style="width:100%" onclick="currentSlide(5)" alt="The Pilbara">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://media4.s-nbcnews.com/j/newscms/2018_22/2449551/180530-great-barrier-reef-ac-1131p_d11657b9b63d5672d33de49743e24de4.fit-760w.jpg" style="width:100%" onclick="currentSlide(6)" alt="Great Barrier Reef">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+  
+</body>
+</html>

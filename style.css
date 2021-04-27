@@ -1,0 +1,33 @@
+.Header{
+text-align: center;
+color: white;
+padding-left: 100px;
+}
+
+.Introduction{
+  font-size: 23px;
+  margin: 20px;
+}
+
+.whole{
+  background:rgba(0,0,0,0.7);
+  padding-left: 140px;
+  padding-right: 140px;
+  
+  
+}
+.Header2{
+  text-align: center;
+  color:steelblue;
+  padding-left: 100px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#48749e;
+    color: white;
+    text-align: center;
+ }

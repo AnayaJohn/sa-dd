@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tour Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+ul {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #54b8b3;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #54b8b3;
+  color: black;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="navbar">
+    <a href="index.html">Home</a></li>
+    <a href="nature.html">Natural Wonders</a></li>
+    <a href="cities.html">Popular Cities</a></li>
+    <a href="cuisines.html">Cuisines</a></li>
+    <a href="image.html">Image Gallery</a></li>
+    <a href="contact.html">Contact Us</a></li>
+</div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="nature.html">Natural Wonders</a></li>
+    <li><a href="cities.html">Popular Cities</a></li>
+    <li><a href="cuisines.html">Cuisines</a></li>
+    <li><a href="image.html">Image Gallery</a></li>
+    <li><a class="active" href="contact.html">Contact Us</a></li>
+  </ul>
+
+<div class="Header2">
+  <h1>Contact Us</h1>
+</div>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  </script>
+
+<p style="padding-left: 100px; padding-right: 100px; font-size: x-large;" >Here are some of the top Hotel Recommendations you can use, when visiting Australia.</p>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.google.com/travel/hotels/Australia/entity/CgsIu63hwebmwOiLARAB/overview?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4463666%2C4482438%2C4486153%2C4491350%2C4515801%2C4523592%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&ap=aAE&q=hotels%20in%20australia&rp=ELut4cHm5sDoiwEQwd7nt77Wms5pEJfJ-ICKmtmccBCg5vOw4ZLKgkk4AUAASAKiAQlBdXN0cmFsaWHAAQPIAQA&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABogCgIaABIaEhQKBwjlDxAFGBkSBwjlDxAFGBoYATICEAAqDQoJSgIgAToDSU5SGgA&ved=0CAAQ5JsGahcKEwjwwsPhzJ7wAhUAAAAAHQAAAAAQDw">
+        <img src="Hyatt.png" alt="Park Hyatt Sydney" width="600" height="400">
+      </a>
+      <div class="desc">Park Hyatt Sydney</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.fourseasons.com/sydney/?seo=google_local_syd1_apac">
+        <img src="https://m.fourseasons.com/alt/img-opt/~70.1530.0,0000-0,0000-2924,4444-1645,0000/publish/content/dam/fourseasons/images/web/SYD/SYD_790_original.jpg" alt="Four Seasons Hotel Sydney" width="600" height="400">
+      </a>
+      <div class="desc">Four Seasons Hotel Sydney</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.google.com/travel/hotels/Australia/entity/ChkI3LaEvrLlpuR4Gg0vZy8xMWNtMHE5bjZiEAE?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4463666%2C4482438%2C4486153%2C4491350%2C4515801%2C4523592%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&ap=aAE&q=hotels%20in%20australia&rp=ELut4cHm5sDoiwEQwd7nt77Wms5pEJfJ-ICKmtmccBCg5vOw4ZLKgkk4AUAASAKiAQlBdXN0cmFsaWE&ictx=1&sa=X&ved=0CAAQ5JsGahcKEwj4pOvb2p7wAhUAAAAAHQAAAAAQAg&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABotCg8SCzoJQXVzdHJhbGlhGgASGhIUCgcI5Q8QBRgZEgcI5Q8QBRgaGAEyAhAAKg8KCygBSgIgAToDSU5SGgA">
+        <img src="Perth.png" alt="Crown Towers Perth" width="600" height="400">
+      </a>
+      <div class="desc">Crown Towers Perth</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <p style="padding-left: 100px; padding-right: 100px; padding-bottom: 150px; font-size: x-large;" >For Further Details, Reach out to us using the below Contact Details. </p>
+
+    <div class="footer">
+        <p>Contact Details:<br> E-mail: anayamary.john@mlsi.in <br> Phone Number: 0123456789 </p>
+        <p>HAVE FUN VISITING AUSTRALIA!</p>
+      </div>
+
+</body>
+</html>
